@@ -1,32 +1,32 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Product from './Products';
+import OrderBreakFast from "./Cart"
 import { NavLink } from "react-router-dom";
-import logoBq from "../img/logoBQ.png";
 import db from '../firebase/config'
 
-const Waiter = () => {
-  const [Breakfast, setBreakfast] = useState([]);
+const Lunch = () => {
+  const [Products, setLunch] = useState([]);
   useEffect(() => {
-    db.collection('Breakfast')
+    db.collection('Lunch').orderBy('name', 'asc')
       .onSnapshot(snap => {
         const documents = [];
         snap.forEach(doc => {
           documents.push({ id: doc.id, ...doc.data() })
         });
-        setBreakfast(documents);
+        setLunch(documents);
       })
-  }, [Breakfast])
+  }, [Products])
 
   const [cart, setCart] = useState([])
 
   return (
     <section>
       <header>
-        <img src={logoBq} alt="Logo" />
+        <img src='img/logoBQ.png' alt="Logo" />
         <nav>
           <ul>
             <NavLink to="/">Inicio</NavLink>
-            <NavLink to="/waiter">Nueva Orden</NavLink>
+            <NavLink to="/desayuno">Nueva Orden</NavLink>
             <NavLink to="/waiterOrder">Ordenes por entregar</NavLink>
           </ul>
         </nav>
@@ -41,24 +41,29 @@ const Waiter = () => {
             <section className="containerBox">
               <section className="cards">
                 {
-                  Breakfast.map((product) => (
+                  Products.map((product) => (
                     <Product
                       key={product.id}
                       product={product}
                       cart={cart}
                       setCart={setCart}
-                      Breakfast={Breakfast}
+                      Products={Products}
                     />
+
                   ))
                 }
               </section>
             </section>
           </Fragment>
         </section>
+        <OrderBreakFast
+          cart={cart}
+          setCart={setCart}
 
+        />
       </main>
     </section>
   );
 };
 
-export default Waiter;
+export default Lunch;
