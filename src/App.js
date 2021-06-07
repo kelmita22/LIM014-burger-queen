@@ -3,12 +3,14 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Chef from "./components/Chef";
 import ChefOrder from "./components/ChefOrder";
-import Waiter  from "./components/Waiter";
 import WaiterOrder from "./components/WaiterOrder";
+import Breakfast from "./components/Breakfast";
+import Lunch from "./components/Lunch";
 import "./scss/app.scss";
 
 function App() {
   return (
+    <div className='App'>
     <BrowserRouter>
 
       <Route path="/" exact={true}>
@@ -23,15 +25,20 @@ function App() {
         <ChefOrder />
       </Route>
 
-      <Route path="/waiter">
-      <Waiter />
+      <Route path="/desayuno">
+      <Breakfast />
       </Route>
 
       <Route path="/waiterOrder">
         <WaiterOrder />
       </Route>
 
+      <Route path="/fuerte">
+        <Lunch />
+      </Route>
+
     </BrowserRouter>
+    </div>
   );
 }
 
