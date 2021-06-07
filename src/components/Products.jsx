@@ -6,7 +6,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 const Product = ({ product, cart, setCart, Products }) => {
   const { id, name, price, idImg } = product;
 
-  const addListProduct = () => {
+  const addBreakFast = () => {
     const exist = cart.find((x) => x.id === product.id);
     if (exist) {
       setCart(
@@ -19,7 +19,7 @@ const Product = ({ product, cart, setCart, Products }) => {
     }
   }
 
-  const deleteListProduct = () => {
+  const deleteBreakFast = () => {
     const exist = cart.find((x) => x.id === product.id);
     if (exist.qty === 1) {
       setCart(cart.filter((x) => x.id !== product.id));
@@ -38,13 +38,13 @@ const Product = ({ product, cart, setCart, Products }) => {
         {Products ? ((<img src={idImg} alt="coffe" width="50px" />))
           : (<></>)}
 
-        <li>{name}</li>
+        <div>{name}</div>
         {Products ? ((<li>${price}</li>))
           : (<></>)}
 
       </ul>
-      {Products ? ((<button type="button" onClick={() => addListProduct(id)}>Agregar</button>))
-        : (<FontAwesomeIcon icon={faTrash} onClick={() => deleteListProduct(id)} />)}
+      {Products ? ((<button type="button" onClick={() => addBreakFast(id)}>Agregar</button>))
+        : (<FontAwesomeIcon icon={faTrash} onClick={() => deleteBreakFast(id)} />)}
 
     </section>
   )

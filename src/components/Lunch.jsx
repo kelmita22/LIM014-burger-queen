@@ -20,23 +20,25 @@ const Lunch = () => {
   const [cart, setCart] = useState([])
 
   return (
-    <section>
-      <header>
-        <img src='img/logoBQ.png' alt="Logo" />
-        <nav>
+    <body className="grid-container">
+      <header className="header">
+        <img src="./img/logoBQ.png" alt="Logo" width="120px" />
+        <nav className="navHeader">
           <ul>
-            <NavLink to="/">Inicio</NavLink>
-            <NavLink to="/desayuno">Nueva Orden</NavLink>
-            <NavLink to="/waiterOrder">Ordenes por entregar</NavLink>
+            <li><NavLink to="/">Inicio</NavLink></li>
+            <li><NavLink to="/desayuno">Nueva Orden</NavLink></li>
+            <li><NavLink to="/waiterOrder">Ordenes por entregar</NavLink></li>
           </ul>
         </nav>
       </header>
-      <main>
+      <nav className="navbar">
+        <ul>
+          <li><NavLink to="/desayuno">Desayuno</NavLink></li>
+          <li><NavLink to="/fuerte">Fuerte</NavLink></li>
+        </ul>
+      </nav>
+      <main className="main">
         <section>
-          <section className="containerMenu">
-            <NavLink to="/desayuno">Desayuno</NavLink>
-            <NavLink to="/fuerte">Fuerte</NavLink>
-          </section>
           <Fragment >
             <section className="containerBox">
               <section className="cards">
@@ -49,20 +51,20 @@ const Lunch = () => {
                       setCart={setCart}
                       Products={Products}
                     />
-
                   ))
                 }
               </section>
             </section>
           </Fragment>
         </section>
+      </main>
+      <aside className="sidebar">
         <OrderBreakFast
           cart={cart}
           setCart={setCart}
-
         />
-      </main>
-    </section>
+      </aside>
+    </body >
   );
 };
 
