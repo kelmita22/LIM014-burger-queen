@@ -33,20 +33,17 @@ const Product = ({ product, cart, setCart, Products }) => {
   }
 
   return (
-    <section className="cards">
-      <ul>
-        {Products ? ((<img src={idImg} alt="coffe" width="50px" />))
+    <div>
+      <div className="profile-content">
+        {Products ? ((<img src={idImg} alt="coffe" width="80px" />))
           : (<></>)}
-
         <div>{name}</div>
-        {Products ? ((<li>${price}</li>))
+        {Products ? ((<div>${price}</div>))
           : (<></>)}
-
-      </ul>
-      {Products ? ((<button type="button" onClick={() => addBreakFast(id)}>Agregar</button>))
+      </div>
+      {Products ? ((<button className='btnAgregar' type="button" onClick={() => addBreakFast(id)}>Agregar</button>))
         : (<FontAwesomeIcon icon={faTrash} onClick={() => deleteBreakFast(id)} />)}
-
-    </section>
+    </div>
   )
 };
 
