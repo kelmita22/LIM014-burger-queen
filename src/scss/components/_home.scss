@@ -1,35 +1,33 @@
-$colorBackground:#b79d6f50;
-$colorButton:#6D422D;
-
-body{
-  background:$colorBackground;
+$colorBackground: #b79d6f50;
+$colorButton: #6d422d;
+body {
+  background: $colorBackground;
 }
-.App{
+.App {
   text-align: center;
 }
 .logo {
   height: 100px;
 }
-.formacion{
+.containerHome {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
 }
-.alineacion{
-  display:inline-block;
-  position:relative;
-  padding: 2px
+.marginHome {
+  display: inline-block;
+  position: relative;
+  padding: 2px;
 }
-.buttonHome{
+
+.buttonHome {
   position: absolute;
   margin-top: 120%;
-  right:1em;
-  background-color:$colorButton;
-  border-radius:1.5em;
-  color:white;
-  text-transform:uppercase;
-  padding:1em 1.5em;
-  }
-
-
+  right: 0em;
+  background-color: $colorButton;
+  border-radius: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}

@@ -1,0 +1,113 @@
+.order{
+  font-size: 1.5em;
+    padding-bottom: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.result{
+  display: flex;
+  justify-content: center;
+  margin-left: 60%;
+}
+span {
+  color: black;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+input {
+  background: #957d1b;
+  border-radius: 20px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+.btnCancel {
+  width: 120px;
+  height: 35px;
+  margin-top: 5%;
+  background: #56493f;
+  color: white;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.btnCancel:hover {
+  background: red;
+}
+.btnSend {
+  width: 120px;
+  height: 35px;
+  margin-top: 5%;
+  background: #6d422d;
+  color: white;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.btnSend:hover {
+  background: red;
+}
+.deleteListProduct {
+  text-decoration: none;
+}
+
+@media only screen
+    and (max-width: 760px), (min-device-width: 768px)
+    and (max-device-width: 1024px)  {
+
+		table, thead, tbody, th, td, tr {
+			display: block;
+      border-collapse: separate;
+      border-spacing:  5px;
+		}
+
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(odd) {
+      background: hsl(48, 56%, 47%);
+    }
+
+    th {
+      height: 35px;
+      border-bottom: 1px solid rgb(210, 220, 250);
+      color: black;
+    }
+
+    tfoot {
+      font-weight: bold;
+    }
+		td {
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		td:before {
+			position: absolute;
+			top: 0;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+    .result{
+      display: flex;
+      justify-content: center;
+      margin-left: 50%;
+    }
+
+		td:nth-of-type(1):before { content: "Cantidad"; }
+		td:nth-of-type(2):before { content: "Producto"; }
+		td:nth-of-type(3):before { content: "Precio"; }
+		td:nth-of-type(4):before { content: "Eliminar"; }
+	}
