@@ -50,12 +50,36 @@ input {
 .deleteListProduct {
   text-decoration: none;
 }
+.thead ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 15px;
+  font-weight: bold;
+}
 
+.tbody ul{
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+}
+
+.tbody li{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: bold;
+}
+section.tfoot {
+  display: flex;
+}
 @media only screen
     and (max-width: 760px), (min-device-width: 768px)
     and (max-device-width: 1024px)  {
 
-		table, thead, tbody, th, td, tr {
+
+	/* 	.table, .thead, tbody, .th, td, .tr {
 			display: block;
       border-collapse: separate;
       border-spacing:  5px;
@@ -109,5 +133,5 @@ input {
 		td:nth-of-type(1):before { content: "Cantidad"; }
 		td:nth-of-type(2):before { content: "Producto"; }
 		td:nth-of-type(3):before { content: "Precio"; }
-		td:nth-of-type(4):before { content: "Eliminar"; }
+		td:nth-of-type(4):before { content: "Eliminar"; } */
 	}
