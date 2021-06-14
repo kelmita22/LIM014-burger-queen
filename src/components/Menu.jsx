@@ -22,7 +22,7 @@ const Menu = () => {
   const [cart, setCart] = useState([])
 
   return (
-    <body className="grid-container">
+    <section className="grid-container">
       <nav className="navbar">
         <button className="btnBreakFast" onClick={() => { setType('breakfast'); }}>Desayuno</button>
         <button className="btnLuch" onClick={() => { setType('lunch'); }}>Fuerte</button>
@@ -57,7 +57,7 @@ const Menu = () => {
           />
         </section>
       </aside>
-    </body>
+    </section>
   );
 };
 
