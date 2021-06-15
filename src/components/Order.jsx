@@ -2,7 +2,7 @@ import React from "react";
 import db from "../firebase/config";
 
 const ChefOrder = ({ order }) => {
-  const { id, name, products } = order;
+  const { id, name, products, order_time } = order;
 
   async function finish(evt) {
     evt.preventDefault();
@@ -13,6 +13,7 @@ const ChefOrder = ({ order }) => {
       status: "delivered",
     });
   }
+
 
   return (
     <section className="card">
@@ -28,7 +29,7 @@ const ChefOrder = ({ order }) => {
           </thead>
           <tbody>
             {products.map((product) => (
-              <tr>
+              <tr key={product.id}>
                 <td> {product.quantity} </td>
                 <td>{product.name}</td>
                 <td> ${product.price}</td>
@@ -37,9 +38,13 @@ const ChefOrder = ({ order }) => {
           </tbody>
         </table>
         <hr></hr>
-        <section className="cards">
+        <section>
+          <section className="time">
+            <span>Tiempo de preparación:</span>
+            <span>{order_time}</span>
+          </section>
           <section className="temporize">
-            <button onClick={finish} className="btnStop">
+            <button onClick={finish} className="btnStop" title="prueba">
               Entregado
             </button>
           </section>

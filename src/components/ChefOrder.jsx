@@ -101,7 +101,7 @@ const ChefOrder = ({ order }) => {
           </thead>
           <tbody>
             {products.map((product) => (
-              <tr>
+              <tr key={product.id}>
                 <td> {product.quantity} </td>
                 <td>{product.name}</td>
                 <td> ${product.price}</td>

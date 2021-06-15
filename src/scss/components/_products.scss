@@ -1,9 +1,13 @@
 .containerCards{
   padding: 15px;
 }
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .contentCards {
-	background-color: #baa035;
+	background-color: #6d422d96;
 	border-radius: 10px;
 	display: flex;
 	overflow: hidden;
@@ -13,7 +17,7 @@
 }
 
 .previewCards {
-	background-color: #baa035;
+  background-color: #6d422d00;
 	color: #fff;
 	padding: 20px;
 }
@@ -36,7 +40,7 @@
 }
 
 .btnAdd:hover {
-  background: red;
+  background: #bda274;
 }
 
 @media screen and (max-width: 480px) {
@@ -49,4 +53,3 @@
 		right: 10px;
 	}
 }
-

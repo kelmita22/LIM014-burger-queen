@@ -69,7 +69,7 @@ const Cart = ({ cart, setCart }) => {
               <span>Cart Is Empty</span>
             ) : (
               cart.map((product) => (
-                <section className='tbody'>
+                <section className='tbody' key={product.id}>
                   <ul className='tr'>
                     <li className='li'> {product.quantity} </li>
                     <li className='li'>
@@ -82,7 +82,7 @@ const Cart = ({ cart, setCart }) => {
                     </li>
                     <li className='li'> ${product.price}</li>
                     <li className='li'>
-                      <FontAwesomeIcon
+                      <FontAwesomeIcon className="iconTrash"
                         icon={faTrash}
                         onClick={() => deleteListProduct(product.id)}
                       />
