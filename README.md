@@ -6,8 +6,9 @@
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Test de Usabilidad](#5-test-de-usabilidad)
-* [6. Integrantes](#6-integrantes)
+* [5. Diagrama de Flujo](#5-diagrama-de-flujo)
+* [6. Test de Usabilidad](#5-test-de-usabilidad)
+* [7. Integrantes](#6-integrantes)
 
 ***
 
@@ -93,26 +94,23 @@ costo total.
 
 ![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif)
 
-<h1 align="center">Proyecto Social - Network<img src="https://media.giphy.com/media/eBb2W1OYVHou9l6W7N/giphy.gif" width="80" height="80" /></h1>
+<h1 align="center">Burger Queen - Sistema de pedidos<img src="https://media.giphy.com/media/eBb2W1OYVHou9l6W7N/giphy.gif" width="80" height="80" /></h1>
 
-### 5. Test de usabilidad:
+### 5. Diagrama de Flujo:
+
+### 6. Test de usabilidad:
 
 Se realizo un test a 5 personas sobre la usabilidad de la red social y su diseño, su feedback fue el siguiente:
 
-![Screenshot](./imageReadme/usabilidad.jpeg)
-![Screenshot](./imageReadme/usabilidad2.jpeg)
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test1.png)
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test2.png)
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test3.png)
 
-### 6. Prototipo Final:
-Usuario de prueba: nunezandreina990@gmail.com
-Clave de prueba: 123456
+### 7. Prototipo Final:
 
-#### Mobile
+#### Tablet
 
 ![Screenshot](https://media.giphy.com/media/0Vdpt3VJeekr5Wt9Q4/giphy.gif)
-
-#### Desktop
-
-![Screenshot](https://media.giphy.com/media/k2AK12wbfxYWGE2CJJ/giphy.gif)
 
 ### 7. Proyecto Tríos:
 
