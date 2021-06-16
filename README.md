@@ -115,7 +115,9 @@ costo total.
 Se realizo un test a 5 personas sobre la usabilidad de la red social y su diseño, su feedback fue el siguiente:
 
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test1.png)
+
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test2.png)
+
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test3.png)
 
 ### 7. Prototipo Final:
