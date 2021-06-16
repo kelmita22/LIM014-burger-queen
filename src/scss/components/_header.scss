@@ -1,5 +1,6 @@
+
 .navHeader {
-  font-weight: bold;
+  font-size: 20px;
 }
 .navHeader ul {
   display: flex;
@@ -22,8 +23,8 @@
   background-color: #0a071a94;
   align-items: center;
 }
+
 a.active{
   border-bottom: 2px solid white;
   padding-bottom: 3px;
 }
-

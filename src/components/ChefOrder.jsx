@@ -3,7 +3,6 @@ import db from "../firebase/config";
 
 const ChefOrder = ({ order }) => {
   const { id, name, products } = order;
-
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
@@ -110,7 +109,7 @@ const ChefOrder = ({ order }) => {
           </tbody>
         </table>
         <hr></hr>
-        <section className="cards">
+        <section>
           <section className="temporize">
             <h2 id="crono">{timer}</h2>
             <button onClick={preparation} className="btnStop">

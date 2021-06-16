@@ -16,20 +16,17 @@
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   grid-area: sidebar;
   background-color: #6d422d96;
+  margin-right: 10px;
 }
 
 .grid-container {
-  display: flex;
-  justify-content: center;
   display: grid;
-  gap: 0px;
   grid-template:
     "header" auto
     "navbar" 50px
     "main" auto
     "sidebar" auto;
 }
-
 .grid-container > * {
   border-radius: 4px;
   padding: 5px;
@@ -41,6 +38,9 @@
       "header  header" 30px
       "navbar  ." 50px
       "main sidebar" auto
+  }
+  .navbar button {
+    padding: 16px 68px;
   }
 }
 

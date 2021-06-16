@@ -2,15 +2,10 @@ import React from 'react';
 import Header from "./Header"
 
 const Layout = ({ children }) => {
-  return (
-    <article className="grid-container">
-      <header>
-
-        <Header />
-        {children}
-
-      </header>
-    </article>);
+  return (<section >
+    <Header />
+    {children}
+  </section>);
 }
 
 export default Layout;
