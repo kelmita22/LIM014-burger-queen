@@ -97,6 +97,14 @@ costo total.
 <h1 align="center">Burger Queen - Sistema de pedidos<img src="https://media.giphy.com/media/eBb2W1OYVHou9l6W7N/giphy.gif" width="80" height="80" /></h1>
 
 ### 5. Diagrama de Flujo:
+> **Mozo:** Inicio del Flujo de pedido:
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/H1.png)
+
+> **Cocina:** Inicio del Flujo de cocina:
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/H2.png)
+
+> **Mozo:** Termino de flujo de cocina:
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/H3.png)
 
 ### 6. Test de usabilidad:
 
