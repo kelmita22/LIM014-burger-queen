@@ -1,9 +1,9 @@
 import React from "react";
 /* import { NavLink } from "react-router-dom"; */
 import "../css/App.css";
-import Logo from "../img/logoBQ.png";
-import Mozo from "../img/mozo.png";
-import Cocina from "../img/cocina.png";
+import Logo from "../img/logoBQ.svg";
+import Mozo from "../img/mozo.svg";
+import Cocina from "../img/cocina.svg";
 
 const Home = () => {
   return (
