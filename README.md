@@ -97,13 +97,17 @@ costo total.
 <h1 align="center">Burger Queen - Sistema de pedidos<img src="https://media.giphy.com/media/eBb2W1OYVHou9l6W7N/giphy.gif" width="80" height="80" /></h1>
 
 ### 5. Diagrama de Flujo:
-> **Mozo:** Inicio del Flujo de pedido:
+
+**Mozo:** Inicio del Flujo de pedido:
+
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/H1.png)
 
-> **Cocina:** Inicio del Flujo de cocina:
+**Cocina:** Inicio del Flujo de cocina:
+
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/H2.png)
 
-> **Mozo:** Termino de flujo de cocina:
+**Mozo:** Termino de flujo de cocina:
+
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/H3.png)
 
 ### 6. Test de usabilidad:
@@ -111,14 +115,26 @@ costo total.
 Se realizo un test a 5 personas sobre la usabilidad de la red social y su diseño, su feedback fue el siguiente:
 
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test1.png)
+
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test2.png)
+
 ![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/test3.png)
 
 ### 7. Prototipo Final:
 
 #### Tablet
 
-![Screenshot](https://media.giphy.com/media/0Vdpt3VJeekr5Wt9Q4/giphy.gif)
+**Home**
+
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/pedidos%20home.jpeg)
+
+**Mozo:**
+
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/pedidos%20mozo.jpeg)
+
+**Cocina**
+
+![Screenshot](https://github.com/kelmita22/LIM014-burger-queen/blob/main/src/readme/Pedidos%20cocina.png)
 
 ### 7. Proyecto Tríos:
 
