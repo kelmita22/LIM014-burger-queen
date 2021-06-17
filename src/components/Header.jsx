@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="header">
       {img.map((image) => {
-        return <ImageProject nombre={image.id} />
+        return <ImageProject key={image} nombre={image.id} />
       })}
       <nav className="navHeader">
         <ul>
